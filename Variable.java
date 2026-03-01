@@ -1,6 +1,7 @@
 public class Variable {
     public static void main(String[] args){
         // Variable is used to store data in the program
+        System.out.println("Variables in Java");
         int number = 5;
         // int data types can store only the integer values
         System.out.println("The value of the number is :"+number);
@@ -19,6 +20,8 @@ public class Variable {
 
         System.out.println("-------------------------------------------");
 
+
+        System.out.println("Primitive data types in Java");
         //Primitives data types in Java//
         //1.Btye -> 1 byte Store whole numbers from -128 to 127//
         byte thebyte = -10;
@@ -53,6 +56,53 @@ public class Variable {
         char grade = 'A';
         System.out.println("The char value is :"+grade); 
 
+        System.out.println("-------------------------------------------");
+        System.out.println("Non-primitive data types in Java");
+        //non-primitive data types in Java//
+        //1.String -> it store a sequence of characters. //
+        String   MovieName = new String("Harry potter");
+        System.out.println("Name is:"+MovieName);
+        System.out.println("---------------------------------------------");
+        // Swap two numbers //
+        System.out.println("Swapping two numbers");
+        int a = 10;
+        int b = 20;
+        System.out.println("Before swapping: a = " + a + ", b = " + b);
+        // Swapping using a temporary variable
+        int temp = a;       
+        a = b;
+        b = temp;
+        System.out.println("After swapping: a = " + a + ", b = " + b);
+        System.out.println("---------------------------------------------");
+
+        
+        System.out.println("Simple calculator");
+        int a1 =15;
+        int b1 =20;
+        // Addition
+        System.out.println("Addition: " + (a1 + b1));
+        // Subtraction  
+        System.out.println("Subtraction: " + (a1 - b1));
+        // Multiplication
+        System.out.println("Multiplication: " + (a1 * b1));
+        // Division
+        System.out.println("Division: " + (a1 / b1));
+        System.out.println("---------------------------------------------");
+
+        System.out.println("Type casting");
+        //// Type casting means converting one data type into another data type.////
+        byte a2 =8;
+        int n3;
+        n3=a2;
+        System.out.println("The value of n3 is :"+n3);
+        // Automatic type casting happens when small data type is stored in big data type.//
+
+        // Explicit type casting means manually converting big data type into small data type.//
+        int n4 = 100;
+        byte n5 = (byte) n4;
+        System.out.println("The value of n5 is :"+n5);
+
+        System.out.println("---------------------------------------------");
                
    }
 }
